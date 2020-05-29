@@ -14,15 +14,15 @@
         <section id="navigation">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                    <a class="navbar-brand text-uppercase" href="#" style="font-family: cursive; font-size:xx-large;">Nip~<span class=text-success>Ace</span> </a>
+                    <a class="navbar-brand text-uppercase" href="#" style="font-family: cursive; font-size:xx-large;">Nip~<span class=text-info>Ace</span> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link active text-uppercase font-weight-bold mr-4" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link text-uppercase font-weight-bold mr-4" href="#">Features</a>
-                        <a class="nav-item nav-link text-uppercase font-weight-bold mr-4" href="#">Pricing</a>
+                        <a class="nav-item nav-link text-uppercase font-weight-bold mr-4" href="#">About</a>
+                        <a class="nav-item nav-link text-uppercase font-weight-bold mr-4" href="#">Skills</a>
                     </div>
                     </div>
                 </nav>
@@ -33,7 +33,7 @@
                 <div class="row mt-5 py-5">
                     <div class="col-md-5 text-center">
                         <h1 class="text-uppercase text-light font-weight-bold">Nipesh <span class="text-light">Pant</span></h2>
-                        <hr class="bg-success ml-auto mr-auto" style="width: 80px; height: 3px;">
+                        <hr class="bg-info ml-auto mr-auto" style="width: 100px; height: 4px;">
                         <h5 class="font-weight-light text-light">I am a Web Developer - Backend Developer</h2>
                         <div class=" py-4">
                                 <a href="" class="text-light pr-3"><i id="social-fb"class="fab fa-facebook-square social"></i></a>
@@ -43,11 +43,45 @@
                                 <a href="" class="text-light pr-3"><i id="social-ln" class="fab fa-linkedin social"></i></a>     
                         </div>
                     </div>
+                    <div class="col-md-4 offset-md-3 contact-form">
+                        <div class="alert alert-danger" role="alert" id="email-alert">
+                            <strong>Error!</strong> Please Enter your Email Adddress.
+                          </div>
+                          <div class="alert alert-danger" role="alert" id="message-alert">
+                            <strong>Error!</strong> Please Enter your Message.
+                          </div>
+                          <div class="alert alert-success" role="alert" id="success-alert">
+                            <strong>Succss!</strong> Email Sent Successfully.
+                          </div>
+                        <div class="form text-center">
+                            <form action="heelo.html">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center"></div>
+                                        <h4 class="text-center text-info mb-3 text-uppercase">Contact Me</h4>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control email" id="Email" placeholder="Email" required>
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <textarea name="" id="Message" cols="30" rows="5" class="form-control border-rounded" placeholder="Message"></textarea>
+                                        </div>
+                                        <br>
+                                        <button type="button" class="btn btn-info submit" value="Send Email" onclick="sendEmail()"> Send Email </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+             
             </div>    
         </section>
     </div>
  </header>             
 </body>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="public/js/app.js"></script>
+<script src="public/js/email.js"></script>
 </html>

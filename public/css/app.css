@@ -10947,7 +10947,7 @@ a.text-dark:focus {
 }
 
 .navbar-nav a.active {
-  border-bottom: 3px solid #28a745;
+  border-bottom: 3px solid #17a2b8;
 }
 
 .social:hover {
@@ -10993,5 +10993,49 @@ a.text-dark:focus {
 
 #social-ln:hover {
   color: #0073B0;
+}
+
+.card {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border-radius: 30px;
+}
+
+.form-control {
+  border-color: #17a2b8;
+  background: transparent;
+}
+
+.form-control:focus {
+  background: transparent;
+}
+
+.form-control::-moz-placeholder {
+  color: white;
+}
+
+.form-control:-ms-input-placeholder {
+  color: white;
+}
+
+.form-control::-ms-input-placeholder {
+  color: white;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.email {
+  border-radius: 50px;
+}
+
+.submit {
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    display: none;
+  }
 }
 
