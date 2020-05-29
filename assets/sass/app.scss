@@ -1,16 +1,31 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+//sal.js
+@import '~sal.js/dist/sal.css';
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;0,900;1,700;1,800&display=swap');
+
+
+body{
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    font-family: 'BioRhyme', serif;
+}
+p{
+    font-size:20px;
+}
+
 #banner{
-    height:100vh;
+    height:110vh;
     background-image: url(https://scontent.fktm8-1.fna.fbcdn.net/v/t1.0-0/p640x640/29314469_2086495221490565_1400894121500999680_o.jpg?_nc_cat=103&_nc_sid=e3f864&_nc_ohc=1UlB5ZnDXGsAX-7Kmos&_nc_ht=scontent.fktm8-1.fna&_nc_tp=6&oh=4c494d685b75cf8fb7a078fccefc93f3&oe=5EF3B46B);
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 .blurbanner{
-    height:100vh;
+    height:110vh;
     background-color: rgba($color: #000000, $alpha: 0.4);
 }
 // .navbar-nav {
@@ -100,6 +115,14 @@
 .submit{
     border-radius: 50px;
 }
+.profile-img{
+    height: 210px;
+    width:  210px;
+    margin-top: -50px;
+    border-color: #17a2b8;
+}
+
+
 @media only screen and (max-width: 600px) {
  .contact-form{
      display: none;

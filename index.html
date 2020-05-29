@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">   
     <link rel="stylesheet" href="public/css/app.css">
     
+    
 </head>
 <body>
+
  <header id="banner">
     <div class="blurbanner">
         <section id="navigation">
@@ -31,7 +33,10 @@
         <section id="main-text mt-5"> 
             <div class="container">
                 <div class="row mt-5 py-5">
-                    <div class="col-md-5 text-center">
+                    <div class="col-md-5 text-center" data-sal="slide-up"
+                    data-sal-delay="300"
+                    data-sal-easing="ease-out-back"
+                    data-sal-duration="1200">
                         <h1 class="text-uppercase text-light font-weight-bold">Nipesh <span class="text-light">Pant</span></h2>
                         <hr class="bg-info ml-auto mr-auto" style="width: 100px; height: 4px;">
                         <h5 class="font-weight-light text-light">I am a Web Developer - Backend Developer</h2>
@@ -43,8 +48,12 @@
                                 <a href="" class="text-light pr-3"><i id="social-ln" class="fab fa-linkedin social"></i></a>     
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-3 contact-form">
-                        <div class="alert alert-danger" role="alert" id="email-alert">
+                    <div class="col-md-4 offset-md-3 contact-form" 
+                         data-sal="fade"
+                         data-sal-delay="300"
+                         data-sal-easing="ease-out-back"
+                         data-sal-duration="1200">
+                          <div class="alert alert-danger" role="alert" id="email-alert">
                             <strong>Error!</strong> Please Enter your Email Adddress.
                           </div>
                           <div class="alert alert-danger" role="alert" id="message-alert">
@@ -78,10 +87,63 @@
             </div>    
         </section>
     </div>
- </header>             
+ </header> 
+ <section id="about">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-3"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-back"
+            data-sal-duration="1200"            
+            >
+                <img src="https://scontent.fktm8-1.fna.fbcdn.net/v/t1.0-9/32873709_2120828088057278_3770801047585423360_n.jpg?_nc_cat=101&_nc_sid=174925&_nc_ohc=JyvPQGbvzesAX990kq-&_nc_ht=scontent.fktm8-1.fna&oh=0f126052001cbe9cd0b50e5098a4000b&oe=5EF8024A" class="rounded-circle profile-img" alt="">
+            </div>
+            <div class="col-md-4 mt-5"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-back"
+            data-sal-duration="1200">
+                <h2 class="text-info text-uppercase">About Me</h2>
+                <hr class="bg-dark ml-0 " style="width: 100px; height: 4px;">
+            </div>
+        </div>
+        <div class="row">
+               <div class="col-md-3" 
+                          
+            >
+            <img src="public/images/mylivesignature.png" alt="" height="60px" class="img-fluid">
+            </div>
+            <div class="col-md-9  text-justify">
+                <div  data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-easing="ease-out-back"
+                data-sal-duration="1200">
+                    <p> 
+                        Hi I'm Nipesh Pant, a Backend Developer/Front End Designer. Coding and Designing has
+                        always been my passion from my inital days with computer and found myself pursuing my 
+                        career in the same field.
+                    </p>
+                    <p>  
+                        I am focused on developing great web experiences with secure Backend, Restful Api's and beautiful UI. 
+                        I am a guy with a humble attitude and strong personality which can help flurish your business digitally.
+                    </p>
+                </div> 
+                <div data-sal="slide-left"
+                data-sal-delay="300"
+                data-sal-easing="ease-out-back"
+                data-sal-duration="1200"> <button class="btn btn-info"> Download CV</button></div>
+                  
+            </div>
+        </div>
+      
+     </div>
+ </section>           
 </body>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="public/js/app.js"></script>
 <script src="public/js/email.js"></script>
+<script src="public/js/sal.js"></script>
+<script>sal();</script>
 </html>

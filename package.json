@@ -16,11 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "laravel-mix": "^5.0.4",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
     "jquery": "^3.2",
-    "popper.js": "^1.12"
+    "laravel-mix": "^5.0.4",
+    "popper.js": "^1.12",
+    "sal.js": "^0.7.6",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
